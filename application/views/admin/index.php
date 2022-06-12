@@ -7,10 +7,6 @@
                         <h2 class="text-white pb-2 fw-bold">Dashboard</h2>
                         <h5 class="text-white op-7 mb-2">Selamat Datang, <?= $users['nama_lengkap'] ?></h5>
                     </div>
-                    <div class="ml-md-auto py-2 py-md-0">
-                        <a href="#" class="btn btn-white btn-border btn-round mr-2">Manage</a>
-                        <a href="#" class="btn btn-secondary btn-round">Add Customer</a>
-                    </div>
                 </div>
             </div>
         </div>
@@ -18,21 +14,50 @@
             <div class="row mt--2">
                 <div class="col-md-6">
                     <div class="card full-height">
-                        <div class="card-body">
-                            <div class="card-title">Overall statistics</div>
-                            <div class="card-category">Daily information about statistics in system</div>
-                            <div class="d-flex flex-wrap justify-content-around pb-2 pt-4">
-                                <div class="px-2 pb-2 pb-md-0 text-center">
-                                    <div id="circles-1"></div>
-                                    <h6 class="fw-bold mt-3 mb-0">New Users</h6>
+                        <div class="row d-flex justify-content-center p-3">
+                            <div class="col-lg-4">
+                                <div class="card rounded-pill">
+                                    <div class="card-body shadow text-center px-2">
+                                        <p class="font-weight-bold">Jumlah Pegawai Aktif</p>
+                                        <hr width="100%" style="font-size: 50px;" color="blue">
+                                        <h1 class="font-weight-bold"><strong>10000</strong></h1>
+                                    </div>
                                 </div>
-                                <div class="px-2 pb-2 pb-md-0 text-center">
-                                    <div id="circles-2"></div>
-                                    <h6 class="fw-bold mt-3 mb-0">Sales</h6>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card rounded-pill">
+                                    <div class="card-body shadow text-center px-2">
+                                        <p class="font-weight-bold">Jumlah Pegawai Cuti</p>
+                                        <hr width="100%" style="font-size: 50px;" color="blue">
+                                        <h1 class="font-weight-bold"><strong>50</strong></h1>
+                                    </div>
                                 </div>
-                                <div class="px-2 pb-2 pb-md-0 text-center">
-                                    <div id="circles-3"></div>
-                                    <h6 class="fw-bold mt-3 mb-0">Subscribers</h6>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card rounded-pill">
+                                    <div class="card-body shadow text-center px-2">
+                                        <p class="font-weight-bold">Jumlah Pegawai Dinas Luar</p>
+                                        <hr width="100%" style="font-size: 50px;" color="blue">
+                                        <h1 class="font-weight-bold"><strong>50</strong></h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card rounded-pill">
+                                    <div class="card-body shadow text-center px-2">
+                                        <p class="font-weight-bold">Jumlah Pegawai Sakit</p>
+                                        <hr width="100%" style="font-size: 50px;" color="blue">
+                                        <h1 class="font-weight-bold"><strong>50</strong></h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card rounded-pill">
+                                    <div class="card-body shadow text-center px-2">
+                                        <p class="font-weight-bold">Jumlah Pegawai Pensiun</p>
+                                        <hr width="100%" style="font-size: 50px;" color="blue">
+                                        <h1 class="font-weight-bold"><strong>50</strong></h1>
+                                    </div>
                                 </div>
                             </div>
                         </div>
