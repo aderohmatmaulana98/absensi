@@ -66,21 +66,42 @@
                 <div class="col-md-6">
                     <div class="card full-height">
                         <div class="card-body">
-                            <div class="card-title">Total income & spend statistics</div>
-                            <div class="row py-3">
-                                <div class="col-md-4 d-flex flex-column justify-content-around">
-                                    <div>
-                                        <h6 class="fw-bold text-uppercase text-success op-8">Total Income</h6>
-                                        <h3 class="fw-bold">$9.782</h3>
-                                    </div>
-                                    <div>
-                                        <h6 class="fw-bold text-uppercase text-danger op-8">Total Spend</h6>
-                                        <h3 class="fw-bold">$1,248</h3>
+                            <div class="card-title text-center"><strong>Presensi Terbaik Berdasarkan Jam Kerja</strong></div>
+                            <div class="row mt-2">
+                                <div class="col-lg-4">
+                                    <div class="card shadow">
+                                        <img src="<?= base_url() ?>/assets/img/profile.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body p-2">
+                                            <h5 class="text-center">Ade Rohmat Maulana</h5>
+                                            <hr width="100%" style="font-size: 50px;" color="blue">
+                                            <p class="card-text p-0 text-center my-0"><strong>Hari :</strong></p>
+                                            <p class="card-text text-center my-0">Senin</p>
+                                            <p class="card-text p-0 text-center"><b>Jam Masuk :</b> 08.00</p>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-md-8">
-                                    <div id="chart-container">
-                                        <canvas id="totalIncomeChart"></canvas>
+                                <div class="col-lg-4">
+                                    <div class="card shadow">
+                                        <img src="<?= base_url() ?>/assets/img/profile.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body p-2">
+                                            <h5 class="text-center">Ade Rohmat Maulana</h5>
+                                            <hr width="100%" style="font-size: 50px;" color="blue">
+                                            <p class="card-text p-0 text-center my-0"><strong>Hari :</strong></p>
+                                            <p class="card-text text-center my-0">Senin</p>
+                                            <p class="card-text p-0 text-center"><b>Jam Masuk :</b> 08.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="card shadow">
+                                        <img src="<?= base_url() ?>/assets/img/profile.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body p-2">
+                                            <h5 class="text-center">Ade Rohmat Maulana</h5>
+                                            <hr width="100%" style="font-size: 50px;" color="blue">
+                                            <p class="card-text text-center my-0"><strong>Hari :</strong></p>
+                                            <p class="card-text text-center my-0">Senin</p>
+                                            <p class="card-text text-center"><b>Jam Masuk :</b> 08.00</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
