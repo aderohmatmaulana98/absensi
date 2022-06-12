@@ -5,12 +5,12 @@ class Auth extends CI_Controller
 {
     public function index()
     {
-        if ($this->session->userdata('email')) {
+        if ($this->session->userdata('username')) {
             redirect('user');
         }
         $data['title'] = 'Login Page';
 
-        $this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email');
+        $this->form_validation->set_rules('username', 'Username', 'trim|required');
         $this->form_validation->set_rules('password', 'Password', 'trim|required');
 
         if ($this->form_validation->run() == false) {
@@ -44,22 +44,22 @@ class Auth extends CI_Controller
                         redirect('pegawai');
                     }
                 } else {
-                    $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Password salah</div>');
+                    $this->session->set_flashdata('message', '<div class="alert alert-danger text-center" role="alert">Password salah</div>');
                     redirect('auth');
                 }
             } else {
-                $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Email belum aktif</div>');
+                $this->session->set_flashdata('message', '<div class="alert alert-danger text-center" role="alert">Email belum aktif</div>');
                 redirect('auth');
             }
         } else {
-            $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">User tidak terdaftar</div>');
+            $this->session->set_flashdata('message', '<div class="alert alert-danger text-center" role="alert">User tidak terdaftar</div>');
             redirect('auth');
         }
     }
 
     public function registration()
     {
-        if ($this->session->userdata('email')) {
+        if ($this->session->userdata('username')) {
             redirect('user');
         }
 

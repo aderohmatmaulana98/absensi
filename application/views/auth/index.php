@@ -18,14 +18,16 @@
                     <h4>Login Page</h4>
                 </div>
                 <div class="p-5">
-                    <form>
+                    <form action="<?= base_url('auth/index') ?>" method="POST">
                         <div class="mb-3">
                             <label for="username" class="form-label">Username</label>
-                            <input type="text" class="form-control" id="username" name="username">
+                            <input type="text" class="form-control" id="username" name="username" value="<?= set_value('username') ?>">
+                            <?= form_error('username', '<small class="text-danger pl-3">', '</small>'); ?>
                         </div>
                         <div class="mb-3">
                             <label for="password" class="form-label">Password</label>
                             <input type="password" class="form-control" id="password" name="password">
+                            <?= form_error('password', '<small class="text-danger pl-3">', '</small>'); ?>
                         </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
